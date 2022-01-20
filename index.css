@@ -37,11 +37,16 @@ html {
 
 #display {
     grid-area: disp;
+    display: grid;
     background-color: rgb(28, 28, 28);
     color: cornsilk;
     font-size: xx-large;
-    text-align: end;
-    justify-content: baseline;
+    justify-content: end;
+    align-content: flex-end;
+}
+
+#display-text {
+    grid-row: 2;
 }
 
 #clear {
