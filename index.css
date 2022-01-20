@@ -5,5 +5,111 @@
 
 html {
     background-color: goldenrod;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
 }
+
+.calc-container {
+    background-color: rgba(0, 0, 0, 0.597);
+    margin: 0.2rem;
+    padding: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: 6em repeat(5, 4rem);
+    grid-template-areas: 
+        "disp   disp    disp    disp"
+        "clear  clear   div     mul"
+        "seven  eight   nine    min"
+        "four   five    six     plu"
+        "one    two     three   eq"
+        "zero0  zero0   point   eq"
+    ;
+}
+
+.calc-container button {
+    background-color: rgb(46, 46, 46);
+    color: cornsilk;
+}
+
+#display {
+    grid-area: disp;
+    background-color: rgb(28, 28, 28);
+    color: cornsilk;
+    resize: none;
+    text-align: end;
+    justify-content: baseline;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#divide {
+    grid-area: div;
+}
+
+#multiply {
+    grid-area: mul;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#min {
+    grid-area: min;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#plus {
+    grid-area: plu;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#equals {
+    grid-area: eq;
+}
+
+#zero {
+    grid-area: zero0;
+}
+
+#point {
+    grid-area: point;
+}
+
 
