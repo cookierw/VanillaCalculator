@@ -1,3 +1,5 @@
+
+
 // Build equation string with trailing spaces
 function evaluate(string) {
     let arr = string.split(" ");
@@ -14,9 +16,7 @@ function evaluate(string) {
             return a - b;
         case '+':
             return a + b;
-        case '=':
+        default:
             break;
     }
 }
-
-console.log(evaluate("5 + 6"))
